@@ -1,0 +1,107 @@
+/* Imports Font */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Sora:wght@100..800&display=swap");
+
+* {
+  padding: 0%;
+  margin: 0%;
+  scroll-behavior: smooth;
+  animation: fade-in 0.15s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  box-sizing: border-box;
+  margin: 0;
+  
+ 
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+
+}
+
+/* max-width */
+@media screen and (min-width: 1312px) {
+  .max-width {
+    max-width: 1312px;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  h1,
+  h2 {
+    font-size: 1.85rem !important;
+  }
+}
+
+
+
+.max-width {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Sora, sans-serif;
+  font-weight: 600;
+}
+
+button {
+  -webkit-font-feature-settings: inherit;
+  font-feature-settings: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  font-variation-settings: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+.btn {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  align-items: center;
+  border-radius: 5px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-weight: 700;
+  height: 56px;
+  justify-content: center;
+  min-width: 156px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media screen and (max-width: 1312px) {
+  .max-width-md {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px !important;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.container,
+.aboutContainerWidth {
+  max-width: 1280px;
+  margin: 0 auto;
+}

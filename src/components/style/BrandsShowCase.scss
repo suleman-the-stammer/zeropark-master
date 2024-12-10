@@ -1,0 +1,102 @@
+.brands-showcase {
+  padding: 20px;
+
+  .brand-container {
+    margin: auto;
+
+    .brand-heading {
+      width: 100%;
+      text-align: left;
+
+
+      h2 {
+        font-size: 2em;
+        margin-bottom: 10px;
+        font-weight: 600;
+        font-size: 2.25rem;
+        line-height: 1.25;
+      }
+
+      p {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        margin-top: 2rem;
+      }
+    }
+
+    hr {
+      border: 1px solid rgba(230, 230, 230);
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .partners-section {
+      margin-bottom: 40px;
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+
+
+
+      h3 {
+        grid-column: span 4 / span 4;
+        font-size: 1.5em;
+        margin-bottom: 10px;
+      }
+
+      .partners {
+        grid-column: span 8 / span 8;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        display: grid;
+        gap: 1.5rem;
+
+
+        .partner {
+          padding: 20px 40px;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          background-color: rgba(250, 250, 250);
+          border-radius: 8px;
+          transition: transform 0.3s;
+
+          img {
+            width: 100%;
+
+          }
+
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// Media Queuries
+
+@media screen and (max-width:1024px) {
+  .partners {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+
+
+}
+
+@media screen and (max-width:766px) {
+  .partners-section {
+    grid-template-columns: unset !important;
+  }
+
+  .partners {
+
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+
+  }
+
+  h3 {
+    width: 100%;
+  }
+
+}

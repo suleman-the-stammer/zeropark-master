@@ -1,0 +1,39 @@
+.StyledButton {
+  width: fit-content;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  display: inline-flex;
+  font-weight: 700;
+  height: 56px;
+  justify-content: center;
+  min-width: 156px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-color: #47fac6;
+  color: black;
+  cursor: pointer;
+  &:hover {
+    background-color: black; /* Slightly darker shade for hover */
+    color: white;
+  }
+
+  &.outlined {
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+    &:hover {
+      color: white;
+      background-color: black; /* Slightly darker shade for hover */
+    }
+  }
+}
+
+.ButtonParent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}

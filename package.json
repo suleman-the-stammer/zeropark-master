@@ -1,0 +1,42 @@
+{
+  "name": "zeropark",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@eslint/config-array": "^0.19.1",
+    "@eslint/object-schema": "^2.1.5",
+    "antd": "^5.20.0",
+    "aos": "^2.3.4",
+    "gasp": "^0.0.2",
+    "glob": "^11.0.0",
+    "gsap": "^3.12.5",
+    "react": "^18.3.1",
+    "react-countup": "^6.5.3",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.2.1",
+    "react-router-dom": "^6.26.0",
+    "react-slick": "^0.30.2",
+    "rimraf": "^6.0.1",
+    "sal.js": "^0.8.5",
+    "sass": "^1.77.8",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^11.1.9"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.3",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.7",
+    "vite": "^5.3.4"
+  }
+}

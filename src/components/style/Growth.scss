@@ -1,0 +1,157 @@
+.commerce-media {
+    --tw-bg-opacity: 1;
+    background-color: rgb(8 8 33 / var(--tw-bg-opacity));
+    color: white;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+
+    .commerce-container {
+        margin: auto;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        p {
+            font-size: 22px;
+            line-height: 1.85;
+            margin: 0;
+            text-align: center;
+            padding-bottom: 40px;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+            position: relative;
+            width: 100%;
+
+            .horizontal-line {
+                position: absolute;
+                top: 50%;
+                background: linear-gradient(to right, transparent, #00ffcc, transparent);
+                width: 100%;
+                height: 1px;
+                z-index: 1;
+
+
+            }
+
+            .tab {
+
+                border: none;
+                cursor: pointer;
+                align-items: center;
+                background-color: rgb(242 242 242);
+                color: rgb(0 0 0);
+                font-size: .875rem;
+                font-weight: 600;
+                min-height: 55px;
+                min-width: 8rem;
+                position: relative;
+                min-width: 11rem;
+                padding: .5rem 1rem;
+                --tw-bg-opacity: 1;
+                --tw-text-opacity: 1;
+                color: rgb(150 150 160 / var(--tw-text-opacity));
+                z-index: 1;
+
+
+
+                &.active {
+                    border-bottom: 2px solid #00ffcc;
+                    --tw-bg-opacity: 1;
+                    --tw-text-opacity: 1;
+                    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+                    color: rgb(0 0 0 / var(--tw-text-opacity));
+
+                }
+            }
+        }
+
+        .statistics {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 4rem;
+            align-items: center;
+
+            .stat-item {
+                text-align: center;
+                min-width: 300px;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                p {
+                    font-size: 64px;
+                    font-weight: 600;
+                    font-family: 'sora';
+
+                    span {
+                        font-size: 64px;
+                        font-weight: 600;
+                        opacity: unset;
+                    }
+
+                    small {
+                        font-size: 40%;
+                        display: block;
+                    }
+
+                }
+
+
+
+                span {
+                    font-size: 0.9rem;
+                    opacity: 0.8;
+                }
+
+                hr {
+                    position: absolute;
+                    top: 80%;
+                    background: linear-gradient(to right, transparent, #00ffcc, transparent);
+                    border: none;
+                    width: 100%;
+                    height: 1px;
+                }
+            }
+        }
+
+        .signup-button {
+            background-color: rgb(71 250 198);
+            color: #0b0c27;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-bottom: 40px;
+
+            &:hover {
+                opacity: .8;
+            }
+        }
+    }
+}
+
+
+// Media Queuries
+
+@media screen and (max-width:950px) {
+
+    .statistics {
+        flex-direction: column;
+    }
+
+}

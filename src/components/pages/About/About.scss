@@ -1,0 +1,425 @@
+.aboutContainer {
+  .aboutHero {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 120px;
+    height: calc(100vh - 120px);
+    background-image: url("../../../assets/aboutHeroBg.webp");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    // height: 100%;
+    width: 100%;
+    border-radius: 24px;
+    overflow: hidden;
+    .heroHeading {
+      font-size: 52px;
+      line-height: 1.15;
+      font-weight: 700;
+      max-width: 680px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      @media screen and (max-width: 500px) {
+        font-size: 32px;
+      }
+    }
+    .heroAbout {
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+      max-width: 960px;
+      margin: 0 auto;
+
+      text-align: center;
+      @media screen and (max-width: 500px) {
+        font-size: 15px;
+        padding: 0 20px;
+      }
+    }
+    .heroButton {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .WhereWeCome {
+    position: relative;
+    margin: 7rem 0;
+    @media screen and (max-width: 900px) {
+      margin: 3rem 0;
+    }
+    .cards {
+      max-width: 1050px;
+      padding: 9rem 0;
+      margin: 0 auto;
+      display: flex;
+      align-content: center;
+      justify-content: space-between;
+      @media screen and (max-width: 900px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        padding: 3rem 0;
+      }
+    }
+    .video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1; /* Ensure the video is behind the content */
+      overflow: hidden; /* Prevents overflow */
+
+      video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensures the video covers the entire background without distortion */
+      }
+    }
+
+    .left {
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 430px;
+      @media screen and (max-width: 900px) {
+        max-width: 100%;
+        padding: 0 20px;
+      }
+      .heading {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+        font-weight: 700;
+      }
+      .info {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+      }
+    }
+  }
+
+  .partOfSomething {
+    display: flex;
+    flex-direction: column;
+    // gap: 3rem;
+    .heading {
+      font-size: 2.25rem;
+      // line-height: 2.5rem;
+      font-weight: 600;
+      line-height: 1.25;
+      text-align: center;
+      margin-bottom: 5rem;
+    }
+
+    .createdBySection {
+      background-color: #e9e9eb;
+      padding: 11rem 0;
+      border-radius: 20px;
+      width: 100%;
+      @media screen and (max-width: 900px) {
+        padding: 5rem 0;
+      }
+      .innerCards {
+        display: flex;
+        flex-direction: column;
+        gap: 11rem;
+        max-width: 1050px;
+        margin: 0 auto;
+        .upperCards {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          @media screen and (max-width: 900px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+          }
+          .left {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 410px;
+            align-items: flex-start;
+            @media screen and (max-width: 900px) {
+              max-width: 100%;
+              padding: 0 20px;
+            }
+            .heading {
+              margin-bottom: 1rem;
+              font-size: 2.25rem;
+              line-height: 2.5rem;
+              font-weight: 600;
+            }
+            .info {
+              font-size: 1.25rem;
+              line-height: 1.75rem;
+            }
+          }
+          .imageParent {
+            @media screen and (max-width: 900px) {
+              padding: 0 20px;
+            }
+
+            img {
+              height: 100%;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    .blueSection {
+      //   padding: 8rem 0;
+      background: #080821;
+      width: 100%;
+      border-radius: 20px;
+      margin-top: -30px;
+      .inner {
+        max-width: 1050px;
+        padding: 8rem 0;
+        margin: 0 auto;
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        @media screen and (max-width: 900px) {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 3rem;
+        }
+        .left {
+          z-index: 1;
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          max-width: 430px;
+          @media screen and (max-width: 900px) {
+            max-width: 100%;
+            padding: 0 20px;
+          }
+          .blueSection_heading {
+            font-size: 2.25rem;
+            line-height: 2.5rem;
+            font-weight: 700;
+            color: white;
+            text-align: start;
+          }
+          .info {
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+            color: white;
+            font-weight: 400;
+          }
+        }
+        .imageParent {
+          width: 410px;
+          height: 234px;
+          @media screen and (max-width: 900px) {
+            padding: 0 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .meetTheTeam {
+    margin: 6rem auto;
+    @media screen and (max-width: 900px) {
+      margin: 3rem auto;
+    }
+    .upper {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      max-width: 533px;
+      @media screen and (max-width: 900px) {
+        max-width: 100%;
+        padding: 0 20px;
+      }
+      .heading {
+        font-size: 2.25rem;
+        line-height: 1, 25;
+        font-weight: 600;
+      }
+      .info {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+      }
+      .bold {
+        font-weight: 600;
+      }
+    }
+  }
+
+  .slider {
+    position: relative;
+    margin-top: 3rem;
+    @media screen and (max-width: 900px) {
+      margin-top: 5rem;
+    }
+    .card {
+      width: 302px !important;
+      margin-right: 24px;
+      border-radius: 1rem;
+      img {
+        height: 324px;
+        border-radius: 1rem 1rem 0px 0px;
+      }
+      .bottomContent {
+        padding: 2rem;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        background: #080821;
+        width: 100%;
+        width: 302px;
+        box-sizing: border-box;
+
+        .name {
+          font-weight: 600;
+          color: white;
+          width: fit-content;
+        }
+        .info {
+          font-weight: 400;
+          color: white;
+          opacity: 0.6;
+          width: fit-content;
+        }
+      }
+    }
+  }
+
+  .next-arrow {
+    right: 19px !important;
+    width: 48px !important;
+    height: 48px !important;
+    z-index: 300;
+    top: -86px;
+    position: absolute;
+    @media screen and (max-width: 900px) {
+      top: -56px;
+    }
+  }
+
+  .prev-arrow {
+    width: 48px !important;
+    height: 48px !important;
+    right: 79px !important;
+    top: -86px;
+    z-index: 300;
+    position: absolute;
+    transform: rotate(180deg);
+    @media screen and (max-width: 900px) {
+      top: -56px;
+    }
+  }
+  .slick-dots li button:before {
+    display: none !important;
+  }
+
+  .basedGlobally {
+    display: flex;
+    flex-direction: column;
+    margin: 7rem auto;
+    gap: 3rem;
+    .heading {
+      font-size: 2.25rem;
+      line-height: 2.5rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .map {
+      position: relative;
+      display: inline-block;
+    }
+
+    .mapImage {
+      width: 100%;
+      height: auto;
+    }
+
+    .marker {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      @media screen and (max-width: 500px) {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .marker img {
+      width: 100%;
+      height: 100%;
+      z-index: 6666666;
+    }
+
+    .berlin {
+      top: 34%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .newYork {
+      top: 40%;
+      left: 25%;
+      transform: translate(-50%, -50%);
+    }
+    .losAngeles {
+      top: 42%;
+      left: 13.5%;
+      transform: translate(-50%, -50%);
+    }
+    .london {
+      top: 30%;
+      left: 46.2%;
+      transform: translate(-50%, -50%);
+    }
+    .zeropark {
+      top: 31%;
+      left: 54%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .recognizeBy {
+    padding: 8rem 2rem;
+    background: #fafafa;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+    @media screen and (max-width: 900px) {
+      padding: 3rem 20px;
+      gap: 2rem;
+    }
+    .heading {
+      font-size: 2.25rem;
+      line-height: 2.5rem;
+      font-weight: 600;
+      text-align: center;
+    }
+    .images {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @media screen and (max-width: 900px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        padding: 3rem 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,128 @@
+$primary-color: rgb(71 250 198);
+$secondary-color: #000;
+$background-color: #fff;
+$font-color: #333;
+$hover-text: #00000080;
+
+.footer {
+    background-color: rgb(8 8 33);
+    color: #FFFFFF;
+    padding: 40px 20px;
+    border-radius: 30px 30px 0px 0px;
+
+
+    &__container {
+        margin: auto;
+        padding-left: 16px;
+        padding-right: 16px;
+
+    }
+
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        margin-bottom: 20px;
+
+
+
+        img {
+            height: none;
+            width: 182px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__columns {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+
+        .footer__column {
+            flex: 1;
+            padding: 0 10px;
+            font-size: .875rem;
+            line-height: 2.25rem;
+            font-weight: 500;
+
+            p {
+                opacity: .5;
+                margin-bottom: 2rem;
+
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+
+                li {
+                    margin: 10px 0;
+
+                    a {
+                        color: #FFFFFF;
+                        text-decoration: none;
+
+
+                        &:hover {
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    .footer__social {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+
+        &__icons {
+            display: flex;
+            gap: 1rem;
+
+            a {
+                list-style: none;
+
+                img {
+                    width: 2rem;
+
+                    &:hover {
+                        opacity: .7;
+                    }
+
+                }
+            }
+        }
+
+        p {
+            font-size: .75rem;
+            opacity: .7;
+        }
+
+
+
+    }
+
+}
+
+
+
+// Media Queuries
+
+@media screen and (max-width:860px) {
+
+    .footer__flex {
+        flex-direction: column;
+    }
+
+    .footer__columns {
+        flex-direction: column;
+    }
+
+
+
+}

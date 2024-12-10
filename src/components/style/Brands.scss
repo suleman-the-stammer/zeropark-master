@@ -1,0 +1,15 @@
+
+.brand {
+    padding: 2.5rem 0rem;
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        flex-wrap: wrap;
+        margin: auto;
+
+    }
+
+}

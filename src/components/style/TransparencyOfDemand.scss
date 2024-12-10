@@ -1,0 +1,90 @@
+.transparency-section {
+    background-color: #fff;
+    overflow-x: hidden;
+
+    .transparency-container {
+        margin: auto;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+
+        .content {
+            grid-column-start: 8;
+            grid-column: span 5 / span 5;
+            margin-bottom: 40px;
+
+
+
+            h2 {
+                font-size: 2em;
+                margin-bottom: 20px;
+                color: #1c1e22;
+            }
+
+            p {
+                font-size: 1.125rem;
+                line-height: 1.75rem;
+                margin-bottom: 15px;
+                color: #666;
+                line-height: 1.6;
+            }
+        }
+
+        .image-container {
+            grid-row-start: 1;
+            grid-column: span 6 / span 6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 10px;
+                vertical-align: middle;
+                align-items: center;
+            }
+        }
+
+        button {
+            background-color: transparent;
+            border: 2px solid #000;
+            border-radius: 5px;
+            color: #333;
+            ;
+            font-weight: 700;
+            height: 48px;
+            min-width: 128px;
+        }
+
+    }
+}
+
+
+// Media Queuries
+
+@media screen and (min-width:1010px) {
+    .transparency-container {
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+
+        .content {
+            padding-left: 140px;
+        }
+
+    }
+
+}
+
+@media screen and (max-width:1010px) {
+    .transparency-container {
+        img {
+            width: 640px;
+        }
+
+        .content {
+            text-align: center;
+        }
+
+    }
+
+}

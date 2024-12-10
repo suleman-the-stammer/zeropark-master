@@ -1,0 +1,152 @@
+$primary-color: rgb(71 250 198);
+$secondary-color: #000;
+$background-color: #fff;
+$font-color: #333;
+$hover-text: #00000080;
+
+.affiliate-networks {
+    text-align: center;
+    background-color: #0b0c27;
+    color: #fff;
+    padding: 50px 20px;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+
+
+    .affiliate-networks-container {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+        margin: auto;
+
+        h1 {
+            font-size: 2.25em;
+            margin-bottom: 20px;
+            font-weight: 600;
+            line-height: 1.25;
+        }
+
+        p {
+            font-size: 1.125rem;
+            margin-bottom: 40px;
+            line-height: 1.75rem;
+        }
+
+        .signup-button {
+            background-color: rgb(71 250 198);
+            color: #0b0c27;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-bottom: 40px;
+
+            &:hover {
+                opacity: .8;
+            }
+        }
+
+        .benefits {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 60px;
+            margin-top: 50px;
+
+            .benefit {
+                max-width: 345px;
+                text-align: center;
+                position: relative;
+
+                .icon {
+                    font-size: 2em;
+                    margin-bottom: 10px;
+                    display: inline-block;
+                    width: 40px;
+                    height: 40px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+
+                    &.icon-performance:before {
+
+                        content: url(../../assets/icons/icon-1.svg);
+
+                    }
+
+                    &.icon-freedom:before {
+                        content: url(../../assets/icons/icon-3.svg);
+
+                    }
+
+                    &.icon-teams:before {
+                        content: url(../../assets/icons/icon-2.svg);
+                    }
+                }
+
+                p {
+
+                    font-size: 1.125rem;
+                    line-height: 1.75rem;
+                    color: rgb(255 255 255);
+
+                    span {
+                        opacity: .8;
+                    }
+
+                }
+
+            }
+        }
+
+        .vertical-line {
+            width: 1px;
+            height: 200px;
+            background: linear-gradient(to bottom, transparent, #00ffcc, transparent);
+            margin: 0 20px;
+
+
+        }
+
+        .networks {
+            display: flex;
+            justify-content: space-around;
+            gap: 1.5rem;
+
+            .network {
+                margin: 10px;
+                padding: 20px 40px;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                background-color: transparent;
+                border-radius: 8px;
+                border: 1px solid white;
+                transition: transform 0.3s;
+            }
+        }
+    }
+}
+
+
+// Media Queuries
+
+@media screen and (max-width:1024px) {
+
+    .benefits {
+        flex-direction: column;
+
+    }
+
+    .vertical-line {
+        transform: rotate(90deg);
+        display: inline;
+        height: 150px;
+
+
+    }
+
+    .networks {
+        flex-wrap: wrap;
+    }
+
+}

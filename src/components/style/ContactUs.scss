@@ -1,0 +1,72 @@
+$primary-color: rgb(71 250 198);
+$secondary-color: #000;
+$background-color: #fff;
+$font-color: #333;
+$hover-text: #00000080;
+
+.contact {
+    background-color: rgb(249 249 249/var(1));
+    background-color: #F9F9F9;
+
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+
+        .contact__textbox {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            flex-direction: column;
+            gap: 2rem;
+            align-items: center;
+            text-align: center;
+            padding-top: 10rem;
+            padding-bottom: 10rem;
+
+            .heading {
+                h2 {
+                    font-size: 2.25rem;
+                    line-height: 2.5rem;
+                }
+
+            }
+
+            .text {
+                p {
+                    font-size: 22px;
+                    line-height: 1.9rem;
+                    color: rgb(103 103 118);
+                }
+            }
+
+            .btn {
+
+                button {
+                    background-color: transparent;
+                    border: 2px solid $secondary-color;
+                    border-radius: 5px;
+                    color: $font-color;
+                    font-weight: 700;
+                    height: 56px;
+                    min-width: 156px;
+
+                }
+
+                :hover {
+                    background-color: $secondary-color;
+                    color: $background-color;
+                }
+
+            }
+
+
+        }
+
+
+    }
+
+
+}

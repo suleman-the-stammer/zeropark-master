@@ -1,0 +1,35 @@
+.slide__container {
+
+    .heading {
+        line-height: 2.75rem;
+        margin: auto;
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            line-height: 5.25rem;
+        }
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        background-image: url(/src/assets/icons/next-icon.svg);
+        width: 3rem;
+        background-repeat: no-repeat;
+        height: 3rem;
+
+        &::after {
+
+            display: none !important;
+        }
+
+    }
+
+    .swiper-button-prev {
+        rotate: 180deg;
+    }
+
+}

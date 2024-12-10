@@ -1,0 +1,72 @@
+$primary-color: rgb(71 250 198);
+$secondary-color: #000;
+$background-color: #fff;
+$font-color: #333;
+$hover-text: #00000080;
+
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+
+    .background-video {
+        position: absolute;
+        top: auto;
+        bottom: -30px;
+        left: 0;
+        width: 100%;
+
+        height: 100%;
+        height: calc(100% + 100px) !important;
+        object-fit: cover;
+        z-index: -1;
+
+    }
+
+    &__content {
+        position: relative;
+        z-index: -1;
+        padding-top: 10rem;
+        width: 100%;
+
+        p {
+            margin-bottom: 1rem;
+            background-color: #F9F9F9;
+            padding: 0.5rem 1rem;
+            border-radius: .5rem;
+            display: inline-block;
+        }
+
+        h1 {
+            font-size: 52px;
+            margin-bottom: 2rem;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .sign-up-btn {
+            display: inline-block;
+            background-color: rgb(71 250 198);
+            height: 56px;
+            min-width: 156px;
+            border: none;
+            font-weight: 700;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-bottom: 2rem;
+
+            &:hover {
+                background-color: $secondary-color;
+                color: $background-color;
+                cursor: pointer;
+            }
+        }
+    }
+}

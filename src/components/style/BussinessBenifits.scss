@@ -1,0 +1,137 @@
+.slider {
+
+    &__container {
+        margin: auto;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+
+
+        .slider-container h2 {
+            margin-top: 0;
+            font-weight: bold;
+            margin-bottom: 40px;
+            color: #333;
+            margin-bottom: 3rem;
+        }
+
+        .card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            height: 300px;
+            padding: 30px;
+            margin: 10px;
+            border-radius: 10px;
+            gap: 1rem;
+            border-width: 2px 0px 0 2px;
+            border-style: solid;
+            border-image-slice: 1;
+            border-right-color: transparent;
+            border-color: rgba(11, 255, 198, 0.493);
+            background-image: linear-gradient(180deg, hsla(0, 0%, 100%, .5), hsla(0, 0%, 95%, .5));
+
+
+
+            .icon {
+                img {
+
+                    width: 60px;
+                }
+            }
+
+
+
+            h3 {
+
+                font-size: 1.5rem;
+                line-height: 2rem;
+                font-weight: 600;
+            }
+
+            p {
+                font-size: 1.125rem;
+                line-height: 1.75rem;
+                color: rgb(80 80 97);
+            }
+        }
+
+        .slick-slider {
+            margin: 20px 0;
+
+
+            .slick-track {
+                width: 9840px !important;
+                margin-top: 30px;
+
+            }
+        }
+
+
+
+
+
+    }
+
+
+
+    .slick-prev,
+    .slick-next {
+        width: 50px;
+        height: 50px;
+        background: white;
+        border: 1px solid #181313;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .slick-prev::before,
+    .slick-next::before {
+        display: none;
+    }
+
+
+    .slick-prev:hover,
+    .slick-next:hover {
+        border-color: #bbb;
+        background: #f0f0f0;
+    }
+
+    .slick-prev:active,
+    .slick-next:active {
+        border-color: #aaa;
+        background: #e0e0e0;
+    }
+    
+    //Media Queries
+    @media screen and (max-width:1024px) {
+        .slick-prev {
+            right: 85% !important;
+        }
+
+        .slick-next {
+            left: 16% !important;
+        }
+
+    }
+
+}
+
+
+@media screen and (max-width:1024px) {
+
+    .card {
+        h3 {
+            font-size: 1.2rem !important;
+        }
+
+        p {
+            font-size: 1.2rem !important;
+        }
+    }
+
+}
