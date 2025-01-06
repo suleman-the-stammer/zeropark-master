@@ -24,20 +24,7 @@ function App() {
       delay: 100,
     });
   })
-  // const location = useLocation();
-
-  // useEffect(() => {
-  //   Aos.init({
-  //     once: true,
-     
-  //   });
-  // }, []);
-
-  // useEffect(() => {
-  //   // Refresh AOS animations whenever the route changes
-  //   Aos.refresh();
-  // }, [location]);
-
+ 
 
   useEffect(() => {
     window.scrollTo(0, 0)
